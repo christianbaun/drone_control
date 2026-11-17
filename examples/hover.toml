@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: Apache-2.0
+# Configure the example vertical takeoff, hold, and landing mission.
+# File: examples/hover.toml
+# Project: drone_control
+# Version: 0.1.0 (project version)
+# Header added: 2026-11-17
+# Authors: drone_control contributors
+# Development assistance: OpenAI Codex CLI
+# License: Apache License, Version 2.0; see LICENSE in the repository root.
+
+# Meter relativ zur Home-Höhe, keine garantierte LiDAR-Bodenhöhe.
+height_m = 0.5
+hold_s = 5.0
+takeoff_timeout_s = 30.0
+landing_timeout_s = 60.0

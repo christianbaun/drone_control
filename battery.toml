@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+# Provide an example Li-Ion 4S battery display profile; does not set FC parameters.
+# File: battery.toml
+# Project: drone_control
+# Version: 0.1.0 (project version)
+# Header added: 2026-11-17
+# Authors: drone_control contributors
+# Development assistance: OpenAI Codex CLI
+# License: Apache License, Version 2.0; see LICENSE in the repository root.
+
+# Lokales Anzeigeprofil; verändert keine ArduPilot-Parameter.
+chemistry = "Li-Ion"
+cells = 4
+capacity_mah = 2500

@@ -1,0 +1,28 @@
+# SPDX-License-Identifier: Apache-2.0
+# Define package metadata, dependencies, build settings, and the CLI entry point.
+# File: pyproject.toml
+# Project: drone_control
+# Version: 0.1.0 (project version)
+# Header added: 2026-11-17
+# Authors: drone_control contributors
+# Development assistance: OpenAI Codex CLI
+# License: Apache License, Version 2.0; see LICENSE in the repository root.
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drone-control"
+version = "0.1.0"
+description = "Einfache, überwachte ArduCopter-Abläufe über MAVLink"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = ["pymavlink>=2.4.49,<3", "pyserial>=3.5,<4"]
+
+[project.scripts]
+drone-control = "drone_control.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["drone_control*"]
